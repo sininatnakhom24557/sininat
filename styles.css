@@ -1,0 +1,913 @@
+ *{
+    /* กำหนด forn */
+    font-family: Arial, Helvetica, sans-serif;
+    /* กำหนดlink style */
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    transition: calc(0.5);
+}
+
+/* -----------------menu---------------- */
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color:#555;
+    overflow: hidden;
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 10px;
+    padding: 14px 16px;
+
+
+}
+.menu{
+    display: flex;
+    overflow: hidden;
+    
+}
+.menu li{
+    float: left;
+    color: black;
+    list-style: none;
+    margin-top: 10px;
+    padding: 14px 16px;
+}
+.menu a:hover{
+    background-color:#3381b9;
+    
+
+
+}
+.menu a:active{
+    background-color: #ffffff;
+    text-decoration: none;
+}
+a{
+    color: rgb(0, 0, 0);
+}
+
+.logo{
+    font-size: 30px;
+}
+
+/* ---------------dropdownmenu------------------- */
+/* navbar-container */
+.navbar{
+    overflow: hidden;
+    background-color: rgb(146, 104, 104);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+/* -------------------- */
+.navbar a{
+    float: left;
+    font: size 14px;
+    color: rgb(189, 142, 194);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* ------------------------- */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+/* ------------------------- */
+.dropdown .dropbtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: brown;
+    padding: 14px 15px;
+    background-color: inherit;
+    margin: 0;
+}
+.nevbar a:hover, .dropdown:hover .dropdown{
+    background-color: #C48CB3;
+}
+ .dropdown-content{
+     display: none;
+     position: absolute;
+     background-color: #83A6CE;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px ;
+     z-index: 1;
+
+ }
+
+/* ------------------------ */
+.dropdown-content a{
+    float: none;
+    color: #C48CB3;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: aquamarine;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* ตกเเต่งหัวตาราง */
+.styled-table {
+    width: 99.99%;
+    background-color: rgb(255, 255, 255); /* ทำเส้นขอบของเซลล์เชื่อมกัน */
+    color: rgb(2, 2, 2);/* สีของตัวอักษรของหัวข้อ */
+    text-align:center;/* จัดตัวอักษรใช้ชิดซ้าย */
+    padding: 12px 15px;/* เพิ่ม padding ด้านในของหัวข้อ */
+    font-size: 16px;/*ขนาดตัวอักษร  */
+}
+
+/* ตกเเต่งเเถวของตาราง */
+.styled-table td {
+
+ text-align:center;
+ padding: 12px 18px;
+ border-collapse: collapse;
+ border-bottom: 1px solid color rgb(5, 5, 5);
+ font-size: 16px;
+
+}
+/* เปลี่ยนสีเมื่อวางเม้าส์ */
+.styled-table tr :hover{
+    background-color: rgb(180, 162, 162);
+
+}
+
+/* เพิ่มเส้นขอบนอกตาราง */
+.styled-table , .styled-table th, .styled-table td{
+    border: 1px solid color rgb(24, 4, 4);
+
+}
+
+/* ------------โปรไฟล์---------- */
+.title {
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pic-item {
+    max-width: 1140px;
+    justify-content: center;
+    text-align: center;
+}
+.pic-item img {
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #83A6CE;
+    align-items: center;
+
+
+}
+
+.pich-item p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: palevioletred;
+    justify-content: center;
+}
+.content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px #C48CB3  solid;   */
+    max-width: 1140px;
+    margin:  0 auto;
+    column-gap: 16px;
+    border-collapse: collapse;
+
+
+
+
+}
+.content-item1{
+    justify-content: center;
+}
+.content-item1 {
+    justify-content: center;
+    /* border: 1px #C48CB3 solid; */
+    padding: 12px;
+    background-color: #E5C9D7;
+    color: black;
+    box-shadow: 0 0 10px #83A6CE;
+    border-radius: 30px;
+    column-gap: 14px;
+
+}
+
+
+.content-item2 {
+    justify-content: center;
+    /* border: 1px #C48CB3 solid; */
+    padding: 12px;
+    background-color: #E5C9D7;
+    color: black;
+    box-shadow: 0 0 10px #83A6CE;
+    border-radius: 30px;
+    
+
+
+}
+.content-item3 {
+    justify-content: center;
+    /* border: 1px #C48CB3 solid; */
+    padding: 12px;
+    background-color: #E5C9D7;
+    color: black;
+    box-shadow: 0 0 10px #83A6CE;
+    border-radius: 30px;
+    
+
+}
+
+.content:hover .content-item1:not(:hover) {
+    opacity: 7;
+    transform: scale(.85);
+}
+.content:hover .content-item2:not(:hover) {
+    opacity: 7;
+    transform: scale(.85);
+}
+.content:hover .content-item3:not(:hover) {
+    opacity: 7;
+    transform: scale(.85);
+}
+
+
+/* ------------------ทำหน้าhome jaaaaaaaa--------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(bg4.jpg) no-repeat center center / cover ;
+    padding: 50px 5%;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background: #83A6CE;
+    border: #C48CB3;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.Logo {
+    font-size: 25px;
+    color: #C48CB3;
+    text-decoration:none;
+    font-weight: 600;
+}
+.navbar-nav {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 35px;
+    font-weight: 500;
+    border-bottom: 2px solid #ffffff00;
+    transition: all;
+    transition-duration: 300ms;
+}
+.navbar-nav a:hover,
+.navbar-nav .active {
+    border-bottom: 2px solid #fff;
+}
+.home {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+}
+.home-detail h1 {
+    font-size: 55px;
+    line-height: 1;
+}
+.home-detail h1 span {
+    color: #4badf4;
+}
+.home-detail h2 {
+    font-size: 32px;
+}
+.home-detail p {
+    margin: 10px 0 20px;
+}
+.home-detail .downLoad-social {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-right: 45px;
+    box-shadow:  0 0 10px #fff;
+    color: #333;
+    text-decoration:none ;
+    font-weight: 500;
+}
+.btn:hover {
+    background: transparent;
+    text-decoration: underline;
+    color: #fff;
+}
+.home-detail .social-icons {
+    margin-left: 20px;
+}
+.home-detail .social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+}
+.home-detail .social-icons a:hover {
+    text-decoration: underline;
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+.home-img .img-box {
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border:2px solid #fff ;
+    border-radius:50% ;
+    box-shadow: 0 0 10px #fff;
+    overflow: hidden;
+}
+.home-img .img-box img {
+    position: absolute;
+    top: 10px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+/* General reset for some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Menu Styling */
+nav {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #eb91be;
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.home-detail {
+    flex: 1;
+    max-width: 500px;
+}
+
+.home-detail h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+}
+
+.home-detail h1 span {
+    color: #816071;
+}
+
+.home-detail h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.home-detail p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.download-social a {
+    color: #333;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.download-social a:hover {
+    color: #C48CB3;
+}
+
+/* Home Image Styling */
+.hom-ing .img-box {
+    flex: 1;
+    max-width: 500px;
+    text-align: 500px;
+}
+
+.hom-ing .img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-detail {
+        max-width: 100%;
+    }
+
+    .hom-ing .img-box {
+        margin-top: 20px;
+    }
+}
+/* ตั้งค่าภาพพื้นหลัง */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* ใช้ความสูงของหน้าจอทั้งหมด */
+    background-image: url('path_to_your_image.jpg'); /* ใส่เส้นทางของภาพ */
+    background-size: cover; /* ทำให้ภาพครอบคลุมทั้งหน้าจอ */
+    background-position: center center; /* จัดภาพให้ตรงกลาง */
+    background-attachment: fixed; /* ให้ภาพพื้นหลังคงที่เมื่อเลื่อนหน้า */
+    color: rgb(0, 0, 0); /* ตั้งสีข้อความให้ดูชัดกับพื้นหลัง */
+}
+
+/* ปรับภาพพื้นหลังให้กับส่วนที่ต้องการ */
+.home {
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(136, 134, 134);
+    text-align: center;
+    padding: 20px;
+}
+
+.home-detail {
+    font-size: 2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.home-detail h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.home-detail p {
+    font-size: 1.2rem;
+}
+/* กำหนดภาพพื้นหลัง */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-image-url.jpg') no-repeat center center fixed;
+    background-size: cover; /* ให้ภาพพื้นหลังขยายเต็มหน้าจอ */
+    color: rgb(0, 0, 0); /* ข้อความสีขาวให้ตัดกับพื้นหลัง */
+}
+
+/* เพิ่มการออกแบบสำหรับ Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.6); /* เพิ่มความทึบให้เมนู */
+    padding: 10px 0;
+}
+
+nav .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .menu li {
+    margin-left: 30px;
+}
+
+nav .menu li a {
+    color: #333
+}
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:#E5C9D7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#portfolio {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 253, 253);
+    color: white;
+    margin-top: 30px;
+}
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #bdcfe0;
+    color: #333;
+   
+  }
+  
+  header {
+    background-color: #222;
+    color: rgb(190, 76, 76);
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .main {
+    padding: 20px 0;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .work-item {
+    background-color: #e0e7f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transform: scale(1.05); /* ขยายการ์ดขึ้นเล็กน้อย */
+   
+  }
+  
+  .work-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .work-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .work-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  footer {
+    background-color: #83A6CE;
+    color:#222;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+/* เอฟเฟกต์เมื่อเอาเมาส์เลื่อนผ่าน */
+.work-item:hover {
+    transform: scale(1.055); /* ขยายการ์ดขึ้นเล็กน้อย */
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูเด่น */
+}
+.title img:hover {
+    transform: scale(1.06); /* ขยายการ์ดขึ้นเล็กน้อย */
+}
+ /* กำหนดการแสดงผลของบล็อกการ์ดทั้งหมด */
+.card-container {
+    display: flex; /* ใช้ grid เพื่อจัดเรียงบล็อก */
+    grid-template-columns: repeat(4, 1fr); /* แบ่งเป็น 4 คอลัมน์ */
+    gap: 20px; /* กำหนดระยะห่างระหว่างบล็อก */
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* สไตล์สำหรับการ์ดแต่ละบล็อก */
+.card {
+    width: 70%; /* ให้บล็อกการ์ดมีความกว้างเต็มที่ */
+    height: 250px; /* กำหนดความสูง */
+    background-color: #f0f0f0; /* สีพื้นหลัง */
+    display: flex;
+    justify-content: center; /* จัดกลาง */
+    align-items: center; /* จัดกลาง */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition สำหรับการเคลื่อนไหว */
+    cursor: pointer; /* เปลี่ยน cursor ให้เป็นมือเมื่อ hover */
+}
+
+/* เอฟเฟกต์เมื่อเอาเมาส์เลื่อนผ่าน */
+.card:hover {
+    transform: scale(1.05); /* ขยายการ์ดขึ้นเล็กน้อย */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูเด่น */
+}
+/*ติดต่ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ */
+.contact-container {
+    justify-content: center;
+    padding: 15px;
+    text-align: center;}
+
+    .contact-container {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-container img {
+        width: 100%;
+        max-width: 1300px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 2px solid #ddd;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .social-link:hover {
+        background-color: #f0f0f0;
+        border-color: #bbb;
+        transform: translateY(-3px);
+    }
+    
+    .social-link img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    
+    .social-link span {
+        font-weight: 500;
+    }
+    
+    /* Facebook */
+    .social-link.facebook {
+        background-color: #3b5998;
+        color: white;
+    }
+    
+    .social-link.facebook:hover {
+        background-color: #2d4373;
+    }
+    
+    /* Instagram */
+    .social-link.instagram {
+        background-color: #e4405f;
+        color: white;
+    }
+    
+    .social-link.instagram:hover {
+        background-color: #c13584;
+    }
+    
+    /* GitHub */
+    .social-link.github {
+        background-color: #333;
+        color: white;
+    }
+    
+    .social-link.github:hover {
+        background-color: #555;
+    }
+    
